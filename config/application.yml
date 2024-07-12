@@ -1,0 +1,20 @@
+# Application configuration settings
+
+# General settings
+app_name: "ERP System"
+default_language: "en"
+
+# SMTP settings for email notifications
+smtp:
+  address: "smtp.yourdomain.com"
+  port: 587
+  domain: "yourdomain.com"
+  user_name: "<%= ENV['SMTP_USERNAME'] %>"
+  password: "<%= ENV['SMTP_PASSWORD'] %>"
+  authentication: "plain"
+  enable_starttls_auto: true
+
+# API keys and secrets
+api_keys:
+  google_maps: "<%= ENV['GOOGLE_MAPS_API_KEY'] %>"
+  sendgrid: "<%= ENV['SENDGRID_API_KEY'] %>"
