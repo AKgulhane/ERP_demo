@@ -1,0 +1,7 @@
+class Transaction < ApplicationRecord
+  belongs_to :account
+
+  validates :date, presence: true
+  validates :amount, presence: true, numericality: true
+  validates :description, presence: true
+end
