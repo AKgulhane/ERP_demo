@@ -30,6 +30,8 @@ This ERP (Enterprise Resource Planning) system is designed to manage core busine
 
 The ERP system follows a modular architecture, with each module responsible for a specific aspect of the business process. The architecture diagram below provides a high-level overview of the system.
 
+![image](https://github.com/user-attachments/assets/8aaffa0c-f839-4aaf-b998-8893105049b8)
+
 
 ## Database Schema
 
