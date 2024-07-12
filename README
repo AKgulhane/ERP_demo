@@ -97,34 +97,6 @@ The ERP system consists of the following modules:
 - **Purchase Service:** Handles purchase operations, updating inventory and accounts payable accordingly.
 - **Payment Service:** Handles customer payments, updating accounts receivable and general ledger accordingly.
 
-### Repository Structure
-
-```sh
-erp-system/
-├── db/
-│   ├── create_tables.sql
-│   └── db_connection.py
-├── docs/
-│   ├── architecture_diagram.png
-│   └── schema_diagram.png
-├── models/
-│   ├── accounts_payable.py
-│   ├── accounts_receivable.py
-│   ├── customers.py
-│   ├── general_ledger.py
-│   ├── inventory.py
-│   ├── products.py
-│   ├── sales.py
-│   ├── salespersons.py
-│   └── vendors.py
-├── services/
-│   ├── payment_service.py
-│   ├── purchase_service.py
-│   └── sales_service.py
-├── main.py
-└── requirements.txt
-```
-
 ## Contributing
 
 We welcome contributions to improve this ERP system. Please follow the steps below to contribute:
