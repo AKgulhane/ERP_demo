@@ -47,7 +47,7 @@ The database schema includes tables for customers, salespersons, products, sales
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/erp-system.git
+   git clone https://github.com/AKgulhane/erp-system.git
    cd erp-system
    ```
 
