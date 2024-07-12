@@ -1,114 +1,67 @@
 # ERP System
 
+## Overview
+This repository contains the source code for a comprehensive ERP (Enterprise Resource Planning) system. The system is modular, with each module managing a specific business process. The modules work together to provide a unified solution for managing the operations of an organization.
+
+![image](https://github.com/user-attachments/assets/e01039d0-d062-4215-86c5-fe6f58df2a87)
+
+
 ## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [System Architecture](#system-architecture)
-4. [Database Schema](#database-schema)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Modules](#modules)
-8. [Contributing](#contributing)
-9. [License](#license)
-
-## Introduction
-
-This ERP (Enterprise Resource Planning) system is designed to manage core business processes such as sales, purchases, inventory, customer relations, and financials in an integrated manner. It is intended for use by small to medium-sized businesses, particularly in the automotive industry.
-
-## Features
-
-- Customer management
-- Sales management
-- Inventory management
-- Vendor management
-- Purchase management
-- Accounts payable and receivable
-- General ledger
-
-## System Architecture
-
-The ERP system follows a modular architecture, with each module responsible for a specific aspect of the business process. The architecture diagram below provides a high-level overview of the system.
-
-![image](https://github.com/user-attachments/assets/8aaffa0c-f839-4aaf-b998-8893105049b8)
-
-
-## Database Schema
-
-The database schema includes tables for customers, salespersons, products, sales, inventory, general ledger, accounts payable, accounts receivable, and vendors. The schema diagram below illustrates the relationships between these tables.
-
-
-## Installation
-
-### Prerequisites
-
-- Python 3.x
-- SQLite3
-
-### Steps
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/AKgulhane/erp-system.git
-   cd erp-system
-   ```
-
-2. Install the required Python packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-3. Set up the database:
-   ```sh
-   sqlite3 erp_system.db < db/create_tables.sql
-   ```
-
-## Usage
-
-To run the application, execute the `main.py` file. This file includes example usage of the various services provided by the ERP system.
-
-```sh
-python main.py
-```
-
-The example usage includes:
-
-- Recording a sale
-- Recording a purchase
-- Recording a customer payment
+- [Modules](#modules)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Modules
+The ERP system is composed of the following modules:
 
-The ERP system consists of the following modules:
+1. [Finance and Accounting](./finance-accounting/README.md)
+2. [Human Resources](./human-resources/README.md)
+3. [Supply Chain Management](./supply-chain-management/README.md)
+4. [Warehouse Management System](./warehouse-management/README.md)
+5. [Material Management](./material-management/README.md)
+6. [Customer Relationship Management](./customer-relationship-management/README.md)
+7. [Production Planning](./production-planning/README.md)
+8. [Sales and Distribution](./sales-distribution/README.md)
+9. [Project Management](./project-management/README.md)
+10. [Business Intelligence](./business-intelligence/README.md)
+11. [Asset Management](./asset-management/README.md)
+12. [E-commerce](./e-commerce/README.md)
 
-### Models
+Each module has its own directory containing the source code, models, controllers, and views. The `shared` directory contains common resources used across multiple modules.
 
-- **Customers:** Manages customer information.
-- **Salespersons:** Manages salesperson information.
-- **Products:** Manages product information.
-- **Sales:** Manages sales transactions.
-- **Inventory:** Manages inventory records.
-- **General Ledger:** Manages general ledger entries.
-- **Accounts Payable:** Manages vendor invoices and payments.
-- **Accounts Receivable:** Manages customer invoices and payments.
-- **Vendors:** Manages vendor information.
+## Installation
+To install and set up the ERP system, follow these steps:
 
-### Services
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/AKgulhane/ERP_demo.git
+    cd ERP_demo
+    ```
 
-- **Sales Service:** Handles sales operations, updating inventory and general ledger accordingly.
-- **Purchase Service:** Handles purchase operations, updating inventory and accounts payable accordingly.
-- **Payment Service:** Handles customer payments, updating accounts receivable and general ledger accordingly.
+2. **Install dependencies:**
+    ```bash
+    # Assuming a Ruby on Rails setup, modify as per your stack
+    bundle install
+    npm install
+    ```
 
-## Contributing
+3. **Set up the database:**
+    ```bash
+    rails db:create
+    rails db:migrate
+    ```
 
-We welcome contributions to improve this ERP system. Please follow the steps below to contribute:
+## Configuration
+Configuration files are located in the `config` directory. Before running the system, ensure that you configure the following:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit them (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a new Pull Request.
+- `database.yml`: Database connection settings.
+- `application.yml`: Application-specific settings.
 
-## License
+## Usage
+To start the ERP system, run the following command:
 
-This project is open.
+```bash
+rails server
