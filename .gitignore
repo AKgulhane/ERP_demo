@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Ignore bundler config
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore database.yml, application.yml
+/config/database.yml
+/config/application.yml
+
+# Ignore sensitive credentials and secrets
+/config/credentials.yml.enc
+/config/master.key
+
+# Ignore node_modules for frontend dependencies
+/node_modules
+
+# Ignore vendor/bundle for bundled gems
+/vendor/bundle
+
+# Ignore byebug command history file.
+/.byebug_history
+
+# Ignore editor-specific files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
