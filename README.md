@@ -1,4 +1,4 @@
-# ERP System
+# ERP System (Code/Documentation In Progress)
 
 ## Overview
 This repository contains the source code for a comprehensive ERP (Enterprise Resource Planning) system. The system is modular, with each module managing a specific business process. The modules work together to provide a unified solution for managing the operations of an organization.
