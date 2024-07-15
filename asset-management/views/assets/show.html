@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maintenances</title>
+</head>
+<body>
+    <h1>Maintenance Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Asset</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for maintenance in maintenances %}
+            <tr>
+                <td>{{ maintenance.date }}</td>
+                <td>{{ maintenance.description }}</td>
+                <td>{{ maintenance.asset.name }}</td>
+                <td>
+                    <a href="/maintenances/{{ maintenance.id }}">Show</a>
+                    <a href="/maintenances/{{ maintenance.id }}/edit">Edit</a>
+                    <form action="/maintenances/{{ maintenance.id }}" method="post" style="display:inline">
+                        <
